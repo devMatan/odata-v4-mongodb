@@ -280,7 +280,8 @@ export class Visitor{
 		if (context.identifier) {
 			switch (method) {
 				case "contains":
-					context.query[context.identifier] = new RegExp(context.literal, "gi");
+					const literal = context.literal === '+' ? /\053/g : context.literal;
+                    			context.query[context.identifier] = new RegExp(literal, "gi");
 					break;
 				case "endswith":
 					context.query[context.identifier] = new RegExp(context.literal + "$", "gi");
