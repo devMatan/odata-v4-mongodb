@@ -1,6 +1,6 @@
 {
   "name": "odata-v4-mongodb2",
-  "version": "0.1.12(1)",
+  "version": "0.1.13",
   "description": "Service OData requests from a MongoDB data store",
   "main": "lib/index.js",
   "typings": "lib/index",
